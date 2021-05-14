@@ -1,9 +1,10 @@
+// rafce
 import React from 'react';
 import logo from '../images/logo3.png'
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const navbar = () => {
+const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
@@ -41,4 +42,4 @@ const navbar = () => {
     )
 }
 
-export default navbar
+export default Navbar
