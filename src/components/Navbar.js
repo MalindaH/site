@@ -1,39 +1,82 @@
 // rafce
-import React from 'react';
-import logo from '../images/logo3.png'
-import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+// import { Button } from './Button';
+import logo from '../images/logo3.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import './Navbar.css';
 
-const Navbar = () => {
+function Navbar() {
+    const [click, setClick] = useState(false);
+    const [button, setButton] = useState(true);
+
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
+    const showButton = () => {
+        if(window.innerWidth < 960){
+            setButton(false);
+        } else {
+            setButton(true);
+        }
+    };
+
+    useEffect(() => {
+        showButton();
+    }, []);
+
+    window.addEventListener('resize', showButton);
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
-                <a className="navbar-brand" href="#">
+                {/* <a className="navbar-brand" href="/">
                     <img className="logo" src={logo} alt='logo'/>
-                </a>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </a> */}
+                <Link to="/" className="navbar-brand" onClick={closeMobileMenu}>
+                    <img className="logo" src={logo} alt='logo'/>
+                </Link>
+                {/* <div className="menu-icon" onClick={handleClick}>
+                    <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+                </div>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <li className='nav-item'>
+                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/experiences' className='nav-links' onClick={closeMobileMenu}>Experiences</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>Projects</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>Contact</Link>
+                    </li>
+                </ul>
+                {button && <Button buttonStyle='btn--outline'>Contact Me</Button>} */}
+
+
+                <button className={click ? 'navbar-toggler collapsed' : 'navbar-toggler'} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={click ? 'true' : 'false'} aria-label="Toggle navigation">
                     <FontAwesomeIcon icon={faBars} style={{color:"white"}}/>
                 </button>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className={click ? 'collapse navbar-collapse show' : 'collapse navbar-collapse'} id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto">
-                        {/* <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                        <li className='nav-item'>
+                            <Link to='/site' className='nav-link' onClick={closeMobileMenu}>Home</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/about-me' className='nav-link' onClick={closeMobileMenu}>About Me</Link>
+                        </li>
+                        {/* <li className='nav-item'>
+                            <Link to='/experiences' className='nav-link' onClick={closeMobileMenu}>Experiences</Link>
                         </li> */}
-                        <li className="nav-item active">
-                            <a className="nav-link" href="#">About me</a>
+                        <li className='nav-item'>
+                            <Link to='/projects' className='nav-link' onClick={closeMobileMenu}>Projects</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Experiences</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Projects</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Contacts</a>
+                        <li className='nav-item'>
+                            <Link to='/contact' className='nav-link' onClick={closeMobileMenu}>Contact</Link>
                         </li>
                     </ul>
                 </div>
