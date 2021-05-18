@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -9,16 +10,16 @@ function Footer() {
                     <h5>Quick links</h5>
                     <ul className="list-unstyled quick-links">
                         <li>
-                            <a href='/site'><i className="fa fa-angle-double-right" />Home</a>
+                            <Link to='/site'><i className="fa fa-angle-double-right" />Home</Link>
                         </li>
                         <li>
-                            <a href='/site/about-me'><i className="fa fa-angle-double-right" />About Me</a>
+                            <Link to='/site/about-me'><i className="fa fa-angle-double-right" />About Me</Link>
                         </li>
                         <li>
-                            <a href='/site/projects'><i className="fa fa-angle-double-right" />Projects</a>
+                            <Link to='/site/projects'><i className="fa fa-angle-double-right" />Projects</Link>
                         </li>
                         <li>
-                            <a href='/site/contact'><i className="fa fa-angle-double-right" />Contact</a>
+                            <Link to='/site/contact'><i className="fa fa-angle-double-right" />Contact</Link>
                         </li>
                     </ul>
                 </div>
