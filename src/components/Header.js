@@ -1,6 +1,7 @@
 import React from 'react'
 import Typed from 'react-typed'
 import bg from '../images/bg4.jpg'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -13,6 +14,7 @@ const Header = () => {
                 typeSpeed={40}
                 backSpeed={40}
                 loop/>
+                <Link to='/site/contact' className="header-button">Contact Me</Link>
                 <a href='/site/contact' className="header-button">Contact Me</a>
             </div>
         </div>
