@@ -18,7 +18,7 @@ function Cards() {
               src={pic1}
               text="McGill CSSA Official Website"
               label="Web Development"
-              path="https://mcgillcssa.herokuapp.com/"
+              path="https://www.mcgillcssa.com/"
             />
           </ul>
           <ul className="cards__items col-12 col-sm-6">
