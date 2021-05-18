@@ -19,9 +19,9 @@ function App() {
           {/* homepage */}
           <Route path="/" exact component={Home} />
           <Route path="/site" exact component={Home} />
-          <Route path="/about-me" exact component={AboutMe} />
-          <Route path="/projects" exact component={Projects} />
-          <Route path="/contact" exact component={Contact} />
+          <Route path="/site/about-me" exact component={AboutMe} />
+          <Route path="/site/projects" exact component={Projects} />
+          <Route path="/site/contact" exact component={Contact} />
         </Switch>
         <Footer />
       </Router>

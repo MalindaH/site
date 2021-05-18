@@ -13,7 +13,7 @@ const Header = () => {
                 typeSpeed={40}
                 backSpeed={40}
                 loop/>
-                <a className="header-button" href="/contact/">Contact Me</a>
+                <a href='/site/contact' className="header-button">Contact Me</a>
             </div>
         </div>
     )

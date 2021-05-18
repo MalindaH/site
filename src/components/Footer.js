@@ -12,13 +12,13 @@ function Footer() {
                             <a href='/site'><i className="fa fa-angle-double-right" />Home</a>
                         </li>
                         <li>
-                            <a href='/about-me'><i className="fa fa-angle-double-right" />About Me</a>
+                            <a href='/site/about-me'><i className="fa fa-angle-double-right" />About Me</a>
                         </li>
                         <li>
-                            <a href='/projects'><i className="fa fa-angle-double-right" />Projects</a>
+                            <a href='/site/projects'><i className="fa fa-angle-double-right" />Projects</a>
                         </li>
                         <li>
-                            <a href='/contact'><i className="fa fa-angle-double-right" />Contact</a>
+                            <a href='/site/contact'><i className="fa fa-angle-double-right" />Contact</a>
                         </li>
                     </ul>
                 </div>
