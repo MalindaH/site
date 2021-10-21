@@ -37,10 +37,10 @@ export default function Home() {
         <div className="col-12 col-sm-7 col-md-9 mt-auto mb-auto">
           <p>
             Hi there! My name is Linhui Huang and I also go by Malinda. I am a
-            third- year (U2) student at McGill University, studying Computer
+            fourth-year (U4) student at McGill University, studying Computer
             Science and Biology Joint Honours Program.
-            <br />I have 3+ years of experience building programs, websites, and
-            games, with proficient knowledge in computer science, statistics,
+            <br />I have 4+ years of programming experience building programs, 
+            with proficient knowledge in computer science, statistics,
             machine learning, and biology.
           </p>
         </div>

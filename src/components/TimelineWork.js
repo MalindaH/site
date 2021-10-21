@@ -43,7 +43,7 @@ const Hometimeline = () => {
           <h5>Montreal, QC</h5>
           <p>
             <br />
-            - Provided help to student questions at tutorials, FRezCa, and MyCourses discussion board.
+            - Provided help to student questions at tutorials, FRezCa Q&A sessions, and MyCourses discussion board.
           </p>
         </TimelineItem>
         <TimelineItem
