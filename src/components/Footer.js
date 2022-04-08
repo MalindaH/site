@@ -28,14 +28,14 @@ function Footer() {
                     <ul className="list-unstyled list-inline social text-center">
                         <li className="list-inline-item"><a href="https://github.com/MalindaH" target="_blank"><i className="fab fa-github"></i></a></li>
                         <li className="list-inline-item"><a href="https://www.linkedin.com/in/linhui-h/" target="_blank"><i className="fab fa-linkedin"></i></a></li>
-                        <li className="list-inline-item"><a href="mailto:linhui.huang@mail.mcgill.ca" target="_blank"><i className="fas fa-envelope"></i></a></li>
+                        <li className="list-inline-item"><a href="mailto:linhuihuang4@gmail.com" target="_blank"><i className="fas fa-envelope"></i></a></li>
                         <li className="list-inline-item"><a href="https://www.youtube.com/c/MalindaHuang" target="_blank"><i className="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>	
             <div className="row">
                 <div className="col-12 text-center">
-                    <h6>Website developed by Linhui Huang (Malinda).</h6>
+                    <h6>Website developed by Malinda (Linhui) Huang.</h6>
                 </div>
             </div>
         </section>	

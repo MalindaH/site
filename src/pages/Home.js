@@ -32,19 +32,17 @@ export default function Home() {
       />
       <Header />
 
-      <div className="row my-intro">
-        <img className="col-12 col-sm-5 col-md-3" src={hello} alt="my-icon"/>
-        <div className="col-12 col-sm-7 col-md-9 mt-auto mb-auto">
-          <p>
-            Hi there! My name is Linhui Huang and I also go by Malinda. I am a
-            fourth-year (U4) student at McGill University, studying Computer
-            Science and Biology Joint Honours Program.
-            <br />I have 4+ years of programming experience building programs, 
-            with proficient knowledge in computer science, statistics,
-            machine learning, and biology.
-          </p>
+      <div className='row my-intro'>
+            <img className='col-3' src={hello} alt="my-icon"/>
+            <div className='col-9 mt-auto mb-auto'>
+                <p>
+                Hi there! My name is Malinda Huang. I am in my last year (U3) at McGill University, 
+                studying Computer Science and Biology Joint Honours.<br />
+                I have 5+ years of experience building programs, websites, and games, with proficient knowledge in computer 
+                science, statistics, machine learning, and biology.
+                </p>
+            </div>
         </div>
-      </div>
 
       <Projects />
 

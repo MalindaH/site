@@ -7,7 +7,7 @@ const Hometimeline = () => {
       <Timeline lineColor={"#ddd"}>
         <TimelineItem
           key="001"
-          dateText="01/2021 – 04/2021"
+          dateText="01/2021 – 04/2022"
           style={{ color: "#e86971" }}
           bodyContainerStyle={{
             background: "#f2f2f2",
@@ -17,13 +17,14 @@ const Hometimeline = () => {
           }}
         >
           <h3>Course Assistant, McGill University</h3>
+          <h5>COMP 303 Software Design</h5>
           <h5>COMP 251 Algorithm & Data Structures</h5>
           <h5>Montreal, QC</h5>
           <p>
           <br />
-          - Effectively and timely communicated with instructor and students.<br />
-          - Developed grading scripts and graded assignments and exams.<br />
-          - Held office hours and monitored Piazza.
+          - Effectively and timely communicate with instructors and students.<br />
+          - Design and grade assignments, exercises, and exams.<br />
+          - Hold office hours and lab tests. Monitor course discussion platforms.
           </p>
         </TimelineItem>
         <TimelineItem
